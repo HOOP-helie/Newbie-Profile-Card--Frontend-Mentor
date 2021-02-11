@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-position: -62% 50%, 148% -42%;
+  background-repeat: no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+
+.attribution {
+  color: white;
+  text-align: center;
+  opacity: 0.5;
+  margin: 2rem 5%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 4%;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 50px 100px 5px rgba(16, 50, 71, 0.3);
+  height: 23.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 22rem;
+}
+
+.card-pattern {
+  background-image: url("images/bg-pattern-card.svg");
+  background: cover;
+  border-radius: 15px 15px 0 0;
+  color: red;
+  height: 37.5%;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: white solid 5px;
+  position: absolute;
+  top: 23%;
+  left: 35%;
+}
+
+.card-content {
+  margin-top: 22%;
+}
+
+.card-content h1 {
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.9rem;
+  margin: 12px 0 25px;
+}
+
+.age {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.data {
+  border-top: solid 1px;
+  border-color: hsl(0, 0%, 59%, 30%);
+  display: flex;
+  justify-content: space-around;
+}
+
+h1,
+.numbers {
+  color: hsl(229, 23%, 23%);
+}
+
+.numbers {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.data {
+  padding: 1.8rem 1.2rem 0;
+}
+
+.data div {
+  margin: 0 2%;
+}
+
+.data-description {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 8px;
+}
+
+.likes,
+.photos {
+  position: relative;
+  left: -10px;
+}
+
+@media (max-width: 75rem) {
+  body {
+    background-position: 120% 70%, -20% -35%;
+  }
+} ;
