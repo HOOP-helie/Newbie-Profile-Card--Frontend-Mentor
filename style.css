@@ -17,13 +17,14 @@ a {
 body {
   background: url("images/bg-pattern-top.svg"),
     url("images/bg-pattern-bottom.svg"), hsl(185, 75%, 39%);
-  /* background-position: -62% 50%, 148% -42%; */
   background-repeat: no-repeat;
-  /* droite: 48%largeur +15%, bas : 65%haut-15%largeur */
-  background-position: right 52vw bottom 40vh, left 46vw top 55vh;
+  background-position: right 51.8vw bottom 34.8vh, left 48vw top 52.2vh;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .attribution {
@@ -39,18 +40,17 @@ body {
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 2px 50px 100px 5px rgba(16, 50, 71, 0.3);
   height: 23.4rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   margin: auto;
+  position: relative;
   text-align: center;
-  transform: translate(-50%, -50%);
-  width: 22rem;
+  width: 21.9rem;
 }
 
+/* Top part of the card */
 .card-pattern {
   background-image: url("images/bg-pattern-card.svg");
   background: cover;
+  background-position: center;
   border-radius: 15px 15px 0 0;
   color: red;
   height: 37.5%;
@@ -64,6 +64,7 @@ body {
   left: 35%;
 }
 
+/* Card main content */
 .card-content {
   margin-top: 22%;
 }
@@ -75,7 +76,7 @@ body {
 .card-content p {
   color: hsl(0, 0%, 59%);
   font-size: 0.9rem;
-  margin: 12px 0 25px;
+  margin: 12px 0 24px;
 }
 
 .age {
@@ -84,11 +85,13 @@ body {
   padding-left: 5px;
 }
 
+/* Bottom part of the card */
 .data {
   border-top: solid 1px;
   border-color: hsl(0, 0%, 59%, 30%);
   display: flex;
   justify-content: space-around;
+  padding: 1.8rem 1.2rem 0;
 }
 
 h1,
@@ -99,10 +102,6 @@ h1,
 .numbers {
   font-size: 1.1rem;
   font-weight: 700;
-}
-
-.data {
-  padding: 1.8rem 1.2rem 0;
 }
 
 .data div {
@@ -119,12 +118,32 @@ h1,
 .likes,
 .photos {
   position: relative;
-  left: -10px;
+  left: -8px;
 }
 
 @media (max-width: 75rem) {
   body {
-    background-position: right 45vw bottom 40vh,
-      left calc(40vw + 15%) top calc(65vh - 13vw);
+    background-position: right 44vw bottom 40vh,
+      left calc(43vw + 15%) top calc(65vh - 13vw);
   }
+
+  .card {
+    border-radius: 5%;
+    width: 20.5rem;
+  }
+  .profile-pic {
+    top: 23.5%;
+    left: 34%;
+  }
+  .card-content {
+    margin-top: 22%;
+  }
+  .card-content {
+    margin-top: 23.5%;
+  }
+}
+.likes,
+.photos {
+  position: relative;
+  left: -10px;
 }
